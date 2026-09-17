@@ -1,0 +1,81 @@
+#custom-ai-status,
+#custom-ai-status-1,
+#custom-ai-status-2,
+#custom-ai-status-3,
+#custom-ai-status-4,
+#custom-ai-status-5,
+#custom-ai-status-6 {
+  background-color: #2c2c2c;
+  background-image: url("assets/claudecode-idle.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border-radius: 10px;
+  color: transparent;
+  padding: 0;
+  margin: 3.6px 2px;
+  font-size: 16.8px;
+  min-width: 28px;
+}
+
+#custom-ai-status.idle,
+#custom-ai-status-1.idle,
+#custom-ai-status-2.idle,
+#custom-ai-status-3.idle,
+#custom-ai-status-4.idle,
+#custom-ai-status-5.idle,
+#custom-ai-status-6.idle {
+  color: transparent;
+  background-image: url("assets/claudecode-idle.svg");
+}
+
+#custom-ai-status.busy,
+#custom-ai-status-1.busy,
+#custom-ai-status-2.busy,
+#custom-ai-status-3.busy,
+#custom-ai-status-4.busy,
+#custom-ai-status-5.busy,
+#custom-ai-status-6.busy {
+  color: transparent;
+  background-image: url("assets/claudecode-busy.svg");
+  animation: ai-status-pulse 1s linear infinite alternate;
+}
+
+#custom-ai-status.done,
+#custom-ai-status-1.done,
+#custom-ai-status-2.done,
+#custom-ai-status-3.done,
+#custom-ai-status-4.done,
+#custom-ai-status-5.done,
+#custom-ai-status-6.done {
+  color: transparent;
+  background-image: url("assets/claudecode-done.svg");
+  animation: ai-status-done-pulse 1s ease-in-out infinite alternate;
+}
+
+#custom-ai-status.hidden,
+#custom-ai-status-1.hidden,
+#custom-ai-status-2.hidden,
+#custom-ai-status-3.hidden,
+#custom-ai-status-4.hidden,
+#custom-ai-status-5.hidden,
+#custom-ai-status-6.hidden {
+  background-image: none;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+}
+
+@keyframes ai-status-pulse {
+  70% { opacity: 1; }
+  100% { opacity: 0.35; }
+}
+
+@keyframes ai-status-done-pulse {
+  0% {
+    background-size: 21px 21px;
+  }
+  100% {
+    background-size: 26px 26px;
+  }
+}

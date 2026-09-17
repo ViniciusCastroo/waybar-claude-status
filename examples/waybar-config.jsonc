@@ -1,0 +1,59 @@
+// Put this group in modules-left, modules-center, or modules-right:
+//
+// "modules-right": [
+//   "group/ai-status"
+// ]
+
+"group/ai-status": {
+  "orientation": "horizontal",
+  "modules": [
+    "custom/ai-status-1",
+    "custom/ai-status-2",
+    "custom/ai-status-3",
+    "custom/ai-status-4",
+    "custom/ai-status-5",
+    "custom/ai-status-6"
+  ]
+},
+
+"custom/ai-status-1": {
+  "exec": "~/.config/waybar/scripts/ai-status.sh 1",
+  "return-type": "json",
+  "interval": 1,
+  "format": "{}"
+},
+
+"custom/ai-status-2": {
+  "exec": "~/.config/waybar/scripts/ai-status.sh 2",
+  "return-type": "json",
+  "interval": 1,
+  "format": "{}"
+},
+
+"custom/ai-status-3": {
+  "exec": "~/.config/waybar/scripts/ai-status.sh 3",
+  "return-type": "json",
+  "interval": 1,
+  "format": "{}"
+},
+
+"custom/ai-status-4": {
+  "exec": "~/.config/waybar/scripts/ai-status.sh 4",
+  "return-type": "json",
+  "interval": 1,
+  "format": "{}"
+},
+
+"custom/ai-status-5": {
+  "exec": "~/.config/waybar/scripts/ai-status.sh 5",
+  "return-type": "json",
+  "interval": 1,
+  "format": "{}"
+},
+
+"custom/ai-status-6": {
+  "exec": "~/.config/waybar/scripts/ai-status.sh 6",
+  "return-type": "json",
+  "interval": 1,
+  "format": "{}"
+}
