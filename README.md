@@ -4,6 +4,8 @@ A minimal Waybar indicator for Claude Code activity.
 
 It shows a quiet gray icon while idle, pulses yellow while Claude is working, then pulses the green icon for 15 seconds when a task finishes before returning to idle.
 
+This project is open source and meant to be shared, improved, and adapted by the community.
+
 ## Features
 
 - Idle, busy, done, and hidden states
@@ -70,6 +72,12 @@ Expected classes:
 - `busy`: yellow pulsing icon
 - `done`: green pulsing icon for 15 seconds
 - `hidden`: empty extra slot
+
+## Contributing
+
+Contributions are welcome. If you have improvements, fixes, new themes, support for other AI tools, better hook examples, or cleaner Waybar configs, feel free to open an issue or pull request.
+
+The goal is to keep this small, useful, and easy to adapt to different Waybar setups.
 
 ## License
 
